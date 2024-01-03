@@ -6,13 +6,15 @@
     <title>Namaste React</title>
 </head>
 <body>
-    <!--Making a hello world program-->
+    <!--Making a hello world program in html-->
    <!--<div id="root">
         <h1>Hello World!</h1>
     </div> -->
 
+    <!-------------------------------------------------------------------------------->
+
     <!--Making a hello world program in Javascript-->
-    <div id="root">
+    <!--<div id="root">
 
     </div>
 
@@ -25,11 +27,34 @@
 //decalred root by get element by id//
 //used "appendchild" so that heading goes into the root as child//
 
-const heading = document.createElement("h1");
-heading.innerHTML = "Hello world From JavaScript!";
-const root = document.getElementById("root");
-root.appendChild(heading);
+//const heading = document.createElement("h1");
+//heading.innerHTML = "Hello world From JavaScript!";
+//const root = document.getElementById("root");
+//root.appendChild(heading);
 
-    </script>
+    </script> -->
+
+
+    <!----------------------------------------------------------------------------------->
+
+    <!--Making  a Basic hello world program in React-->
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!--core element-->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!--dom file : act as a bridge between this react and browser-->
+
+
+<script>
+    const heading = React.createElement("h1", {}, "Hello world from React");
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+
+
+</script>
+
+
 </body>
 </html>
