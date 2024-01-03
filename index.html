@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <!--Making a hello world program-->
+   <!--<div id="root">
+        <h1>Hello World!</h1>
+    </div> -->
+
+    <!--Making a hello world program in Javascript-->
+    <div id="root">
+
+    </div>
+
+    <script>
+
+        //given a variable name called heading//
+//create element called h1//
+//now inserted what to write in heading by using heading.innerHTML//
+//then have to declare heading variable inside the root id to show in the web page//
+//decalred root by get element by id//
+//used "appendchild" so that heading goes into the root as child//
+
+const heading = document.createElement("h1");
+heading.innerHTML = "Hello world From JavaScript!";
+const root = document.getElementById("root");
+root.appendChild(heading);
+
+    </script>
+</body>
+</html>
